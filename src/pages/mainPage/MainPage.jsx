@@ -18,12 +18,9 @@ export function MainPage() {
     }
 
     function changeInputName(index) {
-        const newName = prompt('Введите новое имя');
-        if (newName !== '') {
             const updatedList = [...itemLists];
-            updatedList[index] = newName;
+            updatedList[index] = value;
             setItemLists(updatedList);
-        }
     }
 
     return (
